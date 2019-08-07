@@ -21,22 +21,29 @@
                 <a href="#" class="header__logo logo">
                     <img src="../img/logo.png" alt="Логотип" class="logo__image">
                 </a>
-                <div class="header__grid">
+                <div class="header__grid d-flex">
                     <div class="header__top d-flex">
-                        <a href="#" class="header__number number">8 812 <span class="number__big">985-86-46</span></a>
-                        <a href="#" class="header__number number">8 812 <span class="number__big">985-86-46</span></a>
+                        <div class="header__links d-flex">
+                            <a href="#" class="header__number number">8 (812) <span class="number__big"> 985-86-46</span></a>
+                            <a href="#" class="header__number mail">9858646@gmail.com</a>
+                        </div>
                         <ul class="header__social social d-flex list">
                             <li class="social__item">
-                                <a href="#" class="social__link"></a>
+                                <a href="#" class="social__link social__link_icon social__link_icon_telega"></a>
                             </li>
                             <li class="social__item">
-                                <a href="#" class="social__link"></a>
+                                <a href="#" class="social__link social__link_icon social__link_icon_phone"></a>
                             </li>
                             <li class="social__item">
-                                <a href="#" class="social__link"></a>
+                                <a href="#" class="social__link social__link_icon social__link_icon_whatsup"></a>
                             </li>
                         </ul>
-                        <a href="#" class="header__callback callback-btn">Заказать звонок</a>
+                        <ul class="header__social social d-flex list">
+                            <li class="social__item">
+                                <a href="#" class="social__link social__link_icon social__link_icon_insta"></a>
+                            </li>
+                        </ul>
+                        <a href="#" class="header__callback callback-btn" data-remodal-target="modal-callback">Заказать звонок</a>
                     </div>
                     <nav class="header__nav d-flex">
                         <ul class="header__menu menu d-flex list">
@@ -171,19 +178,21 @@
                     </div>
                     <div class="features__item">
                         <img src="img/sketch.svg" alt="" class="features__image">
-                        <p class="features__text">Эскиз проекта при первой встрече</p>
+                        <p class="features__text">Современные решения и технологии</p>
                     </div>
                     <div class="features__item">
                         <img src="img/sketch.svg" alt="" class="features__image">
-                        <p class="features__text">Эскиз проекта при первой встрече</p>
+                        <p class="features__text">Летнее кафе "ПОД КЛЮЧ"</p>
                     </div>
                     <div class="features__item">
                         <img src="img/sketch.svg" alt="" class="features__image">
-                        <p class="features__text">Эскиз проекта при первой встрече</p>
+                        <p class="features__text">“Умные” конструкции</p>
                     </div>
                     <div class="features__item">
                         <img src="img/sketch.svg" alt="" class="features__image">
-                        <p class="features__text">Эскиз проекта при первой встрече</p>
+                        <p class="features__text">Спроектировали
+                            и построили
+                            больше 100 объектов</p>
                     </div>
                 </div>
             </div>
@@ -192,17 +201,102 @@
             <div class="work__container container">
                 <h2 class="work__title title title_hidden">Наши работы</h2>
                 <div class="work__grid row wrap d-flex">
-                    <div class="work__col col col-5">
-                        <div class="work__item">
-                            <div class="work__image"></div>
-                            <div class="work__hidden">
-                                <h3 class="work__name"></h3>
-                            </div>
+                    <div class="work__col d-flex">
+                        <div class="work__column col">
+                            <a href="#" class="work__item">
+                                <img src="img/work__image-large.jpg" alt="" class="work__image work__image_middle">
+                                <div class="work__hidden d-flex">
+                                    <div class="work__content">
+                                        <h3 class="work__name">БАР «JAGER HAUS»</h3>
+                                        <p class="work__text">Псков, Крестовское ш. 40</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="work__item">
+                                <img src="img/work__image-large.jpg" alt="" class="work__image work__image_middle">
+                                <div class="work__hidden d-flex">
+                                    <div class="work__content">
+                                        <h3 class="work__name">БАР «JAGER HAUS»</h3>
+                                        <p class="work__text">Псков, Крестовское ш. 40</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="work__column col">
+                            <a href="#" class="work__item">
+                                <img src="img/work__image-large.jpg" alt="" class="work__image work__image_large">
+                                <div class="work__hidden d-flex">
+                                    <div class="work__content">
+                                        <h3 class="work__name">БАР «JAGER HAUS»</h3>
+                                        <p class="work__text">Псков, Крестовское ш. 40</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="work__item">
+                                <img src="img/work__image-large.jpg" alt="" class="work__image">
+                                <div class="work__hidden d-flex">
+                                    <div class="work__content">
+                                        <h3 class="work__name">БАР «JAGER HAUS»</h3>
+                                        <p class="work__text">Псков, Крестовское ш. 40</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="work__col col col-2">
+                    <div class="work__col">
+                        <div class="work__column col">
+                            <a href="#" class="work__item">
+                                <img src="img/work__image-big.jpg" alt="" class="work__image work__image_big">
+                                <div class="work__hidden d-flex">
+                                    <div class="work__content">
+                                        <h3 class="work__name">БАР «JAGER HAUS»</h3>
+                                        <p class="work__text">Псков, Крестовское ш. 40</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="work__col col col-5">
+                    <div class="work__col d-flex">
+                        <div class="work__column col">
+                            <a href="#" class="work__item">
+                                <img src="img/work__image-large.jpg" alt="" class="work__image work__image_middle">
+                                <div class="work__hidden d-flex">
+                                    <div class="work__content">
+                                        <h3 class="work__name">БАР «JAGER HAUS»</h3>
+                                        <p class="work__text">Псков, Крестовское ш. 40</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="work__item">
+                                <img src="img/work__image-large.jpg" alt="" class="work__image work__image_middle">
+                                <div class="work__hidden d-flex">
+                                    <div class="work__content">
+                                        <h3 class="work__name">БАР «JAGER HAUS»</h3>
+                                        <p class="work__text">Псков, Крестовское ш. 40</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="work__column col">
+                            <a href="#" class="work__item">
+                                <img src="img/work__image-large.jpg" alt="" class="work__image work__image_large">
+                                <div class="work__hidden d-flex">
+                                    <div class="work__content">
+                                        <h3 class="work__name">БАР «JAGER HAUS»</h3>
+                                        <p class="work__text">Псков, Крестовское ш. 40</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="work__item">
+                                <img src="img/work__image-large.jpg" alt="" class="work__image">
+                                <div class="work__hidden d-flex">
+                                    <div class="work__content">
+                                        <h3 class="work__name">БАР «JAGER HAUS»</h3>
+                                        <p class="work__text">Псков, Крестовское ш. 40</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -221,21 +315,21 @@
                 </div>
                 <div class="services__col col col-3">
                     <div class="services__item">
-                        <img src="img/services__image_1.jpg" alt="" class="services__image">
+                        <img src="img/services__image_2.jpg" alt="" class=" services__image">
                         <h3 class="services__name">проектирование летних кафе, веранд, террас</h3>
                         <p class="services__text">С другой стороны консультация с широким активом требуют определения и уточнения систем массового участия. Не следует забывать, что сложившаяся структура организации обеспечивает участие в формировании предложений.</p>
                     </div>
                 </div>
                 <div class="services__col col col-3">
                     <div class="services__item">
-                        <img src="img/services__image_1.jpg" alt="" class="services__image">
+                        <img src="img/services__image_3.jpg" alt="" class="services__image">
                         <h3 class="services__name">проектирование летних кафе, веранд, террас</h3>
                         <p class="services__text">С другой стороны консультация с широким активом требуют определения и уточнения систем массового участия. Не следует забывать, что сложившаяся структура организации обеспечивает участие в формировании предложений.</p>
                     </div>
                 </div>
                 <div class="services__col col col-3">
                     <div class="services__item">
-                        <img src="img/services__image_1.jpg" alt="" class="services__image">
+                        <img src="img/services__image_4.jpg" alt="" class="services__image">
                         <h3 class="services__name">проектирование летних кафе, веранд, террас</h3>
                         <p class="services__text">С другой стороны консультация с широким активом требуют определения и уточнения систем массового участия. Не следует забывать, что сложившаяся структура организации обеспечивает участие в формировании предложений.</p>
                     </div>
@@ -243,13 +337,249 @@
             </div>
         </div>
     </section>
+    <section class="reviews">
+        <div class="reviews__container container">
+            <h2 class="reviews__title title title_h2 title_center title_color-dark">Отзывы о нашей работе</h2>
+            <div class="reviews__carousel owl-carousel">
+                <div class="reviews__slide">
+                    <div class="reviews__grid wrap row d-flex">
+                        <div class="reviews__col col col-6">
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__col col col-6">
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__grid wrap row d-flex">
+                        <div class="reviews__col col col-6">
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__col col col-6">
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__grid wrap row d-flex">
+                        <div class="reviews__col col col-6">
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__col col col-6">
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                            <div class="reviews__item d-flex">
+                                <img src="../img/reviews__image.jpg" alt="" class="reviews__image">
+                                <div class="reviews__content">
+                                    <h3 class="reviews__name">Николай</h3>
+                                    <p class="reviews__desc">Кафе «Казан-мангал», 4 Июля, 2019</p>
+                                    <p class="reviews__text">Компания «ПроектСтрой» зарекомендовала себя как квалифицированный и исполнительный подрядчик. Порученные работы выполнены в сжатые сроки, на высоком технологическом уровне и с отличным качеством.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__container container">
+            <h2 class="about__title title title_h2 title_color-dark">О нас</h2>
+            <div class="about__top">
+                <h3 class="about__name title title_h3 title_color-dark">Cтроительство и монтаж летних кафе</h3>
+                <div class="about__text">
+                    <p>
+                        В теплый солнечный день так не хочется сидеть в помещении, пусть это даже роскошный ресторан с изысканной обстановкой и современными кондиционерами. Приятный теплый ветерок и ласковые солнечные лучи не заменит ни изысканная обстановка, ни техника, поэтому в теплую погоду большинство людей предпочитают летний ресторан.
+                    </p>
+                </div>
+            </div>
+            <div class="about__features feature">
+                <div class="feature__row d-flex">
+                    <div class="feature__content">
+                        <h4 class="feature__title title title_h4 title_color-dark">В чем преимущества летнего кафе?</h4>
+                        <div class="feature__text">
+                            <p>
+                                Организация летнего кафе сегодня не в новинку. В крупных и мелких городах с каждым годом количество подобных заведений растет, ведь они очень популярны у посетителей. Поэтому монтаж летних кафе привлекает многих владельцев кафе и ресторанов – это прямой путь к повышению рентабельности заведения.
+                            </p>
+                            <p>
+                                Проектирование летних кафе обычно выполняется рядом с действующим рестораном. Это способ развития заведения, привлечения новых клиентов и интересное сезонное предложение для постоянных гостей. В условиях жесткой конкуренции ресторанного бизнеса такой шаг крайне важен – наличие небольшой летней площадки дает заведению явные преимущества.
+                            </p>
+                            <p>
+                                Установка летних веранд для ресторанов и кафе может осуществляться в любом месте. Мобильные палатки не менее интересное решение, чем конструкции для ресторанов. Они дают возможность быстро запустить одно или несколько кафе и баров, актуальных только в летний период. Все это способствует тому, что строительство летних кафе ежегодно набирает обороты.
+                            </p>
+                        </div>
+                    </div>
+                    <picture class="feature__pic">
+                        <img src="img/feature__img.png" alt="" class="feature__img">
+                    </picture>
+                </div>
+                <div class="feature__row d-flex">
+                    <div class="feature__content">
+                        <h4 class="feature__title title title_h4 title_color-dark">Реализация идеи летнего кафе</h4>
+                        <div class="feature__text">
+                            <p>
+                                Новички в строительной сфере иногда считают, что изготовление летнего кафе – это сущие пустяки. Поставить небольшую конструкцию в указанном месте и наполнить её столиками, барной стойкой не трудно. В действительности производство летних кафе – это кропотливая и ответственная работа. И любой процесс, будет ли это планирование ресторанчика из дерева или изготовление тентов для шатра, требует внимательности и профессионализма.
+                            </p>
+                            <p>
+                                Наша компания предлагает качественное проектирование летнего ресторана любого типа. Специалисты выполняют задачи различной сложности, работают с деревом, металлом, тентами и прочими материалами, которые сегодня применимы для создания современных летних террас. Дизайн ресторанов и кафе обязательно выполняется с учетом всех пожеланий клиента. А после того, как готова новая летняя терраса, монтаж её специалисты осуществляют самостоятельно. Но самое главное, что какой бы сложной и уникальной ни была конструкция, мы стараемся, чтобы цена на неё оставалась максимально демократичной.
+                            </p>
+                        </div>
+                    </div>
+                    <picture class="feature__pic">
+                        <img src="img/feature__img.png" alt="" class="feature__img">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="footer">
-    
+    <div class="footer__top">
+        <div class="footer__container container">
+            <h2 class="footer__title title title_color-white">Остались вопросы?</h2>
+            <form action="#" class="footer__form form wrap row d-flex">
+                <div class="form__group col col-4">
+                    <input type="text" class="form__element form__input" placeholder="Ваше имя">
+                </div>
+                <div class="form__group col col-4">
+                    <input type="text" class="form__element form__input" placeholder="Ваш телефон">
+                </div>
+                <div class="form__group col col-4">
+                    <button type="submit" class="form__button footer__button btn">Отправить</button>
+                </div>
+                <div class="form-group col form__group_large terms-conditions">
+                    <label for="license1">
+                        <input id="license1" type="checkbox" class="checkbox-template" checked="">
+                        <span> Я даю согласия на обработку моих <a href="#" class="terms-conditions__link">персональных данных</a></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="footer__center">
+            <div class="footer__container container">
+                <div class="footer__grid d-flex wrap row">
+                    <div class="footer__col col col-6">
+                        <img src="../img/logo.png" alt="Логотип" class="footer__logo">
+                    </div>
+                    <div class="footer__col col col-6 d-flex wrap">
+                        <div class="footer__contacts footer-contacts">
+                            <p class="footer-contacts__name">Телефон</p>
+                            <a href="#" class="footer-contacts__el footer-contacts__number">8 (812) 985-86-46</a>
+                        </div>
+                        <div class="footer__contacts footer-contacts">
+                            <p class="footer-contacts__name">Адрес</p>
+                            <div class="footer-contacts__el">ООО «ПРОЕКТ СТРОЙ», пл. Конституции 2, БЦ К-2, офис 2</div>
+                        </div>
+                        <div class="footer__contacts footer-contacts">
+                            <p class="footer-contacts__name">E-mail</p>
+                            <a href="#" class="footer-contacts__el">9858646@gmail.com</a>
+                        </div>
+                        <div class="footer__contacts footer-contacts">
+                            <p class="footer-contacts__name">Режим работы</p>
+                            <div class="footer-contacts__el">Ежедневно с 9-00 до 21-00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__container container">
+                <div class="footer__grid d-flex wrap row">
+                    <p class="footer__copy">© Все права защищены</p>
+                    <a href="#" class="footer__personal">Пользовательское соглашение</a>
+                    <a href="#" class="footer__company company">
+                        <img src="../img/logo-banana.png" alt="Логотип BananaWeb" class="company__logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <div class="remodal" data-remodal-id="modal-callback">
     <div class="remodal__box-title">
-        <div class="remodal__title title title_h3">Заказать звонок</div>
+        <div class="remodal__title title title_h3">Заказать обратного звонка</div>
     </div>
     <div class="contact-form">
         <div class="form-complete">
@@ -267,27 +597,28 @@
                 <div class="form__group form__group_large сol">
                     <input type="tel" class="form__element mask" name="phone" placeholder="Ваш телефон" required>
                 </div>
+                 <div class="form__group form__group_large сol">
+                    <select class="form__element">
+                        <option value=""></option>
+                    </select>
+                </div>
             </div>
             <div class="form-group col form__group_large terms-conditions">
                 <label for="license2">
                     <input id="license2" type="checkbox" class="checkbox-template" checked="">
-                    <span> Я прочитал(а) и принимаю условия <a href="#" class="terms-conditions__link">пользовательского соглашения</a></span>
+                    <span> Я даю согласия на обработку моих <a href="#" class="terms-conditions__link">персональных данных</a></span>
                 </label>
             </div>
             <div class="box-center">
-                <button class="remodal__btn header__callback">
-                    Заказать звонок
+                <button class="remodal__btn">
+                    перезвоните мне
                 </button>
             </div>
         </form>
     </div>
     <button data-remodal-action="close" class="remodal-close"></button>
 </div>
-<div class="remodal modal-form" data-remodal-id="modal-form">
-    <button data-remodal-action="close" class="remodal-close"></button>
-    <h2>Спасибо, ваше сообщение отправлено.</h2>
-    <p>Мы свяжемся с Вами в ближайшее время.</p>
-</div>
+
 </div>
 <div class="arrow-up"></div>
 <script src="js/main.js"></script>

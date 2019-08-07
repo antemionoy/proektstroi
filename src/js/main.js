@@ -119,10 +119,39 @@ function inputmask() {
 
 }
 
+function owlFunction(carousel) {
+
+    $(carousel).owlCarousel({
+        items: 1,
+        margin: 2,
+        loop: false,
+        nav: false,
+        dots: true,
+        responsive: {
+            320: {
+                items: 1,
+            },
+
+            480: {
+                items: 1
+            },
+
+            768: {
+                items: 1
+            },
+
+            1023: {
+                items: 1
+            }
+        }
+    });
+}
+
+
 
 
 $(function() {
 
-   
+    owlFunction('.reviews__carousel');
 
 });
