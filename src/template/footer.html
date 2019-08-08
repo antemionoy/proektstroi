@@ -7,7 +7,7 @@
                     <input type="text" class="form__element form__input" placeholder="Ваше имя">
                 </div>
                 <div class="form__group col col-4">
-                    <input type="text" class="form__element form__input" placeholder="Ваш телефон">
+                    <input type="tel" class="form__element form__input" placeholder="Ваш телефон">
                 </div>
                 <div class="form__group col col-4">
                     <button type="submit" class="form__button footer__button btn">Отправить</button>
@@ -49,7 +49,7 @@
         </div>
         <div class="footer__bottom">
             <div class="footer__container container">
-                <div class="footer__grid d-flex wrap row">
+                <div class="footer__grid d-flex wrap">
                     <p class="footer__copy">© Все права защищены</p>
                     <a href="#" class="footer__personal">Пользовательское соглашение</a>
                     <a href="#" class="footer__company company">
@@ -74,15 +74,21 @@
         </div>
         <form action="#" class="remodal__form form form-ajax">
             <div class="form__inner remodal__grid wrap d-flex">
-                <div class="form__group form__group_large сol">
+                <div class="form__group  form__group_large сol">
+                    <div class="form__icon form__icon_person"></div>
                     <input type="text" class="form__element" name="username" placeholder="Ваше ФИО" required>
                 </div>
-                <div class="form__group form__group_large сol">
+                <div class="form__group  form__group_large сol">
+                    <div class="form__icon form__icon_phone"></div>
                     <input type="tel" class="form__element mask" name="phone" placeholder="Ваш телефон" required>
                 </div>
                  <div class="form__group form__group_large сol">
-                    <select class="form__element">
-                        <option value=""></option>
+                    <div class="form__icon form__icon_time"></div>
+                    <select class="form__element form__select">
+                        <option value="В любое время" checked disabled>В любое время</option>
+                        <option value="с 9 до 13 часов">с 9 до 13 часов</option>
+                        <option value="с 13 до 16 часов">с 13 до 16 часов</option>
+                        <option value="с 16 до 20 часов">с 16 до 20 часов</option>
                     </select>
                 </div>
             </div>
